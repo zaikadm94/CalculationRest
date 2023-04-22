@@ -8,10 +8,8 @@ public class CalculateService {
             if (money >= threshold) { // можем ли отдыхать?
                 count++; // увеличиваем счётчик месяцев отдыха
                 money = (money - expenses) / 3;
-                System.out.println("Пойду отдыхать! После отдыха денег " + money);
             } else {
                 money = money + income - expenses;
-                System.out.println("месяц " + month + " денег " + money + " заработал " + income + " потратил " + threshold);
             }
         }
         return count;
